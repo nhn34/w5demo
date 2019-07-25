@@ -1,0 +1,28 @@
+/* =============
+    Hero
+============= */
+
+#hero {
+    background-image: url("../img/slide_5.jpg");
+    background-size: cover;
+    background-position: center;
+    div {
+        padding: 500px 0 100px;
+        text-align: center;
+
+        @include md {
+            padding: 360px 0 100px;
+        }
+
+        h1 {
+            font-weight: 600;
+            color: $teal;
+            font-size: rem-calc(22);
+        }
+
+        h2 {
+            color: $white;
+            font-size: rem-calc(44);
+        }
+    }
+}

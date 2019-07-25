@@ -14,15 +14,29 @@
             padding: 360px 0 100px;
         }
 
+        @include lg {
+            padding: 445px 0 121px;
+        }
+
+        @include xl {
+            padding: 600px 0 121px;
+        }
+
         h1 {
             font-weight: 600;
             color: $teal;
             font-size: rem-calc(22);
+            @include lg {
+                font-size: rem-calc(37);
+            }
         }
 
         h2 {
             color: $white;
             font-size: rem-calc(44);
+            @include lg {
+                font-size: rem-calc(82);
+            }
         }
     }
 }

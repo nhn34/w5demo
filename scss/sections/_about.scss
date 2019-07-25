@@ -7,6 +7,9 @@
         text-align: center;
         font-weight: 300;
         font-size: rem-calc(22);
+        @include lg {
+            font-size: rem-calc(37);
+        }
     }
     h2 {
         text-align: center;
@@ -15,6 +18,18 @@
         padding-bottom: 30px;
         @include md {
             padding-bottom: 50px;
+        }
+        @include lg {
+            font-size: rem-calc(57);
+            padding-bottom: 90px;
+        }
+    }
+
+    p {
+        line-height: 20px;
+        @include lg {
+            font-size: rem-calc(25);
+            line-height: 41px;
         }
     }
     section {
@@ -38,6 +53,9 @@
             img {
                 height: 45px;
 
+                @include lg {
+                    height: 50px;
+                }
             }
             h3 {
                 font-weight: 600;
@@ -47,6 +65,10 @@
                 @include sm {
                     padding-left: 10px;
                 }
+
+                @include lg {
+                    font-size: rem-calc(27);
+                }
             }
 
     }
@@ -55,10 +77,24 @@
 
         @include md {
             display: grid;
-            grid-template-columns: auto 30px auto;
+            grid-template-columns: auto 50px auto;
             grid-template-areas: "branding . design";
             // grid-gap: 30px;
         }
+
+        @include lg {
+            grid-template-columns: 10% auto 15% auto 10%;
+            grid-template-areas: ". branding . design .";
+
+        }
+
+        @include xl {
+            grid-template-columns: auto 500px 15% 500px auto;
+            grid-template-areas: ". branding . design .";
+
+        }
+
+
         section:nth-child(1) {
 
             @include md {

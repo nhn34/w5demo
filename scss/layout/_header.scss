@@ -2,13 +2,94 @@
     Header
 ============= */
 header{
-    padding: 15px 0;
     h1 {
-        font-size: rem-calc(24);
+        font-size: rem-calc(27);
+
         span {
             color: $teal;
         }
     }
+
+    div {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-areas:
+        "bars logo cart"
+        "nav nav nav";
+
+        @include lg {
+            grid-template-columns: 35px 40% 35% auto 35px;
+            grid-template-areas:
+            ". logo nav cart .";
+
+        }
+
+        section:nth-child(1) {
+            grid-area: logo;
+            text-align: center;
+            padding: 15px 0;
+
+            @include lg {
+                text-align: left;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        section:nth-child(2) {
+            grid-area: bars;
+            padding-left: 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            @include lg {
+                display: none;
+            }
+
+            button {
+                background-color: white;
+                border: none;
+                outline: none;
+                padding: 0;
+                i {
+                    font-size: rem-calc(27);
+                }
+            }
+
+        }
+
+        section:nth-child(4) {
+            grid-area: cart;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 15px;
+
+            @include lg {
+                justify-content: flex-end;
+
+            }
+            a {
+                span {
+                    display: none;
+                    @include lg {
+                        display: block;
+                    }
+                }
+            }
+        }
+        nav {
+            background-color: $teal;
+            grid-area: nav;
+
+            @include lg {
+                background-color: white;
+                display: block !important;
+            }
+        }
+    }
+
 
 
 

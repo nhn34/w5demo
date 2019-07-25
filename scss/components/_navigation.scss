@@ -1,3 +1,63 @@
 /* =============
     Navigation
 ============= */
+
+header {
+    div {
+    section:nth-child(4) {
+
+
+        a:link, a:visited{
+        padding-bottom: 2px;
+        border-bottom: 3px solid $teal;
+        display: flex;
+        span {
+            font-size: rem-calc(21);
+            color: $black;
+            font-weight: 600;
+            padding-left: 10px;
+        }
+    }
+
+        a:hover, a:active {
+            border-bottom: 3px solid $black;
+
+        }
+    }
+
+
+
+    nav {
+        ul {
+            @include lg {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            li {
+                border-bottom: 3px solid $white;
+                a:link, a:visited{
+                color: $black;
+                display: inline-block;
+                font-weight: 600;
+                padding: 10px 0 10px;
+                @include lg {
+                    font-size: rem-calc(21);
+                    padding: 35px 36px 35px 0;
+                }
+                }
+
+                a:hover, a:active {
+                color: $white;
+                @include lg {
+                    color: $teal;
+                }
+                }
+
+
+            }
+        }
+    }
+}
+}

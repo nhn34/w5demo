@@ -55,6 +55,16 @@
 		"oAP": "/img/shop.eps",
 		"oF": 0
 		},
+	"/img/shop.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/shop.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/slide_5.jpg": {
 		"ft": 16384,
 		"iS": 164020,

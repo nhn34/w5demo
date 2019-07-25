@@ -35,4 +35,7 @@ a{
 
 .space {
     padding: 60px 0;
+    @include lg {
+        padding: 90px 0;
+    }
 }
